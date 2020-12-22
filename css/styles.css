@@ -1,0 +1,80 @@
+body {
+  font-size: 14px;
+}
+
+
+.hero {
+  padding-top: 100px;
+}
+
+
+
+h2 {
+  font-size: 3.25rem;
+}
+h2 span {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+}
+.card p {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+h3 span {
+  font-size: 1rem;
+}
+
+li strong {
+  font-size: 1.25rem;
+}
+
+.nav-item {
+  font-size: 1.25rem;
+}
+
+.card-img-top {
+  cursor: zoom-in;
+  caret-color: #C0A062;
+}
+
+.contact label {
+  font-size: 1.25rem;
+}
+
+.hero img {
+  border-radius: 100%;
+}
+
+.pc-image {
+  border-radius: 25%;
+}
+
+.gray-scale {
+  filter: grayscale(75%);
+}
+
+.logos {
+  font-size: 1.25rem;;
+}
+
+/* .skills {
+  background-image: url("../img/Slanted-Gradient2.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+} */
+
+@media screen and (max-width: 768px) {
+  .header .nav-item:hover {
+    background-color: var(--light);
+  }
+}

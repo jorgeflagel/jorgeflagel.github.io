@@ -1,0 +1,23 @@
+{
+  "name": "personal-web-page",
+  "version": "1.0.0",
+  "description": "This is my personal web page with bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch-sass & npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "watch-sass": "node-sass -w scss -o css"
+  },
+  "author": "Jorge Flagel",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node-sass": "^4.7.2"
+  }
+}
