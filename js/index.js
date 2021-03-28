@@ -37,7 +37,7 @@ document.querySelectorAll('.nav-link').forEach(item => {
     let href = item.getAttribute("href");
     let section = document.querySelector(href);
     let x = 0;
-    let y = section.getBoundingClientRect().top + window.scrollY;
+    let y = section.getBoundingClientRect().top + window.scrollY - 50;
     window.scroll({top:y, left:x, behavior:'smooth'});
   });
 });
@@ -77,9 +77,26 @@ document.querySelector('#logo-brand').addEventListener('click', event => {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
+          form.classList.add('was-validated');
         }
-        form.classList.add('was-validated');
+        else {
+          event.preventDefault();
+          // generate a five digit number for the contact_number variable
+          this.contact_number.value = Math.random() * 100000 | 0;
+          // these IDs from the previous steps
+          emailjs.sendForm('service_bzi2je8', 'template_i8bnb1c', this)
+              .then(function() {
+                  console.log('Email Sending: SUCCESS!');
+                  document.getElementById("contact-form").reset()
+                  form.classList.remove('was-validated');
+                  
+              }, function(error) {
+                  console.log('FAILED...', error);
+              });
+        }
+                
       }, false);
     });
   }, false);
 })();
+

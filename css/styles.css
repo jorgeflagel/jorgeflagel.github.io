@@ -1,13 +1,10 @@
 body {
-  font-size: 14px;
+  font-size: 1rem;
 }
-
 
 .hero {
   padding-top: 100px;
 }
-
-
 
 h2 {
   font-size: 3.25rem;
@@ -65,6 +62,14 @@ li strong {
 
 .logos {
   font-size: 1.25rem;;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.text-info-carrousel {
+  padding: 50px;
 }
 
 /* .skills {
