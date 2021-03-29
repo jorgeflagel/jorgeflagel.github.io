@@ -1,7 +1,7 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="content-language" content="en-us">
   <title>Jorge Flagel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
@@ -19,7 +19,7 @@
   <header class="container-fluid header bg-dark" id="header">
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" id="navigation">
       <a class="navbar-brand col-2 col-md-1" href="#header"><img src="./img/logo.png" alt="Jorge Flagel" width="60" id="logo-brand"></a>
-      <ul class="nav col-5 col-md-2 justify-content-around" aria-label="LinkedIn, Github and Mail icon-links">
+      <ul class="nav col-5 col-md-2 justify-content-around">
         <li><a href="https://github.com/jorgeflagel"><i class="fa fa-github fa-lg"></i></a></li>
         <li><a href="https://www.linkedin.com/in/jorge-e-flagel-b2b372207/"><i class="fa fa-linkedin fa-lg"></i></a></li>
         <li><a href="#contact"><i class="fa fa-envelope-open fa-lg"></i></a></li>
@@ -50,10 +50,10 @@
 
     <div class="hero row align-items-center pb-5">
       <div class="col-8 offset-2 col-md-5 offset-md-0 col-lg-4 offset-lg-1 d-md-inline order-last order-md-first">
-        <img src="./img/image-12.png" class="blur" alt="" width=100% style="opacity:70%;">
+        <img src="./img/image-12.png" class="blur" alt="" style="opacity:70%;">
       </div>
       <div class="col-12 col-md-6 offset-md-0 col-lg-5 offset-lg-1 text-center ">
-        <h2 class="text-white"><span class="text-secondary d-block">Hi, my name is Jorge Flagel.</span>I'm a Frontend Developer.</h2>
+        <h1 class="text-white"><span class="text-secondary d-block">Hi, my name is Jorge Flagel.</span>I'm a Frontend Developer.</h1>
         <p class="text-info">
           I'm focused in developing responsive web pages and applications, with great care for details. 
           I can recreate complex design with "pixel perfect" code, respecting the original vision of the designer. 
@@ -67,7 +67,7 @@
     <section class="container-fluid  py-5" id="about-me" aria-label="about me">
       <div class="row align-items-center">
         <div class="d-none d-lg-inline col-lg-5 offset-lg-1 offset-xl-1 order-last">
-          <img src="./img/pc-image.jpg" width=100% alt="" class="pc-image gray-scale">
+          <img src="./img/pc-image.jpg" alt="" class="pc-image gray-scale">
         </div>
         <div class="col-12 col-md-8 offset-md-2 col-lg-5 offset-lg-1 col-xl-4 offset-xl-1">
           <h2 class="text-center text-primary"><span class="text-secondary d-block">About me</span>This is my history</h2>
@@ -274,24 +274,26 @@
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal5">Show More</button>
           </div>
         </div>
-      </div>
-      <div class="modal fade" id="modal5" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header bg-dark">
-              <h3 class="modal-title text-primary">Fifth Project</h3>
-              <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body bg-light">
-              <p class="text-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint accusantium et nesciunt aut voluptatem, iusto quas magni. Quis, laboriosam? Aut vel quas cupiditate dolor modi, nemo dolorum assumenda recusandae suscipit?</p>
-            </div>
-            <div class="modal-footer bg-dark">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      
+        <div class="modal fade" id="modal5" tabindex="-1">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h3 class="modal-title text-primary">Fifth Project</h3>
+                <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body bg-light">
+                <p class="text-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint accusantium et nesciunt aut voluptatem, iusto quas magni. Quis, laboriosam? Aut vel quas cupiditate dolor modi, nemo dolorum assumenda recusandae suscipit?</p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
+        
         </div>
-      </div>
       -->
+      </div>
     </section>
 
     <section class='container-fluid bg-dark py-5' id="education" aria-label="resume: education">
@@ -377,9 +379,9 @@
   <!-- Boostrap4 JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Add Javascript files -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
-  <script type="text/javascript">
+  <script>
     (function() {
         // https://dashboard.emailjs.com/admin/integration
         emailjs.init('user_x4vFN0pDLUWm16uWiWW58');
@@ -389,3 +391,4 @@
 
   <script src="./js/index.js"></script>
 </body>
+</html>
