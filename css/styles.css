@@ -78,6 +78,12 @@ li strong {
   width: 90%;
 }
 
+.navbar-toggler, .navbar-toggler:hover, .navbar-toggler:focus {
+  border: none;
+  outline: none;
+}
+
+
 /* .skills {
   background-image: url("../img/Slanted-Gradient2.svg");
   background-attachment: fixed;
