@@ -8,7 +8,7 @@
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
-  --purple: #6f42c1;
+  --purple: #6f42c1#FFFFFF;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
@@ -22,7 +22,7 @@
   --primary: #C0A062;
   --secondary: #929292;
   --success: #28a745;
-  --info: #787878;
+  --info: #8c8c8c;
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #161616;
