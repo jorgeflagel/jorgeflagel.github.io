@@ -1,5 +1,6 @@
 body {
   font-size: 1rem;
+  max-width: 100%;
 }
 
 .hero {
@@ -70,6 +71,11 @@ li strong {
 
 .text-info-carrousel {
   padding: 50px;
+}
+
+.my-photo {
+  max-width: 100%;
+  width: 90%;
 }
 
 /* .skills {
