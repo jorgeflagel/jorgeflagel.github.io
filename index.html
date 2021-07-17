@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./css/custom.css">
   <link rel="stylesheet" href="./css/styles.css">
   <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
 </head>
 
@@ -58,8 +58,13 @@
           I'm focused on developing responsive web pages and applications, with great care for details.
           I can recreate complex designs with "pixel perfect" code, respecting the original vision of the designer.
           My preferred library is ReactJS with Styled-Components for CSS embedded in Javascript.
-          Also, I'm learning about Backend Development with NodeJS and Django.</p>
-      </div>
+          Also, I'm learning about Backend Development with NodeJS and Django.
+        </p>
+        <div>
+          <a href="./cv/cvespanol.pdf" download></a><button class="btn btn-primary">Download CV Español</button></a>
+          <a href="./cv/cvenglish.pdf" download></a><button class="btn btn-primary">Download CV English</button></a>
+        </div>
+      </div>     
     </div>
   </header>
 
@@ -91,7 +96,7 @@
               <li class="m-2"><img src="./img/logos/react-logo.svg" height="40" alt=""> ReactJS</li>
               <li class="m-2"><img src="./img/logos/redux-logo.svg" height="40" alt=""> Redux</li>
               <li class="m-2"><img src="./img/logos/Sass-logo.svg" height="40" alt=""> SASS</li>
-              <li class="m-2"><img src="./img/logos/Bootstrap-logo.svg" height="40" alt=""> Bootstrap4</li>
+              <li class="m-2"><img src="./img/logos/Bootstrap-logo.svg" height="40" alt=""> Bootstrap</li>
               <li class="m-2"><img src="./img/logos/html5-logo.svg" height="40" alt=""> HTML5</li>
               <li class="m-2"><img src="./img/logos/ccs3-logo.svg" height="40" alt=""> CSS3</li>
             </ul>
@@ -99,20 +104,21 @@
           <div class="col-12 col-md-4">
             <h3 class="text-white text-center">Backend</h3>
             <ul class="d-flex flex-wrap flex-row flex-md-column justify-content-center text-info text-md-center list-unstyled logos">
-              <li class="m-2"><img src="./img/logos/nodejs-logo.svg" height="40" alt=""> NodeJS</li>
-              <li class="m-2"><img src="./img/logos/expressjs-logo.svg" width="40" alt=""> ExpressJS</li>
+              <li class="m-2"><img src="./img/logos/nodejs-logo.svg" height="40" alt=""> NodeJS (basic)</li>
+              <li class="m-2"><img src="./img/logos/expressjs-logo.svg" width="40" alt=""> ExpressJS (basic)</li>
 
               <li class="m-2"><img src="./img/logos/Python-logo.svg" height="40" alt=""> Python</li>
-              <li class="m-2"><img src="./img/logos/django-logo.svg" height="40" alt=""> Django</li>
-              <li class="m-2"><img src="./img/logos/sqlite-logo.svg" height="40" alt=""> SQLite</li>
-              <li class="m-2"><img src="./img/logos/mongodb-logo.svg" height="40" alt=""> MongoDB</li>
+              <li class="m-2"><img src="./img/logos/django-logo.svg" height="40" alt=""> Django (basic)</li>
+              <li class="m-2"><img src="./img/logos/sqlite-logo.svg" height="40" alt=""> SQLite (basic)</li>
+              <li class="m-2"><img src="./img/logos/mongodb-logo.svg" height="40" alt=""> MongoDB (basic)</li>
             </ul>
           </div>
           <div class="col-12 col-md-4">
             <h3 class="text-white text-center">Others</h3>
             <ul class="d-flex flex-wrap flex-row flex-md-column justify-content-center text-info text-md-center list-unstyled logos">
+              <li class="m-2"><img src="./img/logos/Figma.svg" width="40" alt=""> Figma</li>
               <li class="m-2"><img src="./img/logos/git-icon.svg" width="40" alt=""> Git</li>
-              <li class="m-2"><img src="./img/logos/pandas-icon.svg" width="40" alt="">Pandas</li>
+              <li class="m-2"><img src="./img/logos/pandas-icon.svg" width="40" alt=""> Pandas</li>
               <li class="m-2"><img src="./img/logos/matplotlib_icon.png" width="40" alt=""> Matplolib</li>
             </ul>
           </div>
@@ -124,12 +130,52 @@
       <div class="row justify-content-around">
         <h2 class="col-12 text-primary text-center">Portfolio</h2>
 
+        
+
+
+        <!-- CARD AND MODAL 2 -->
+        
+        <div class="card m-2 bg-dark" style="width: 27rem;">
+          <img class="card-img-top gray-scale" src="./img/blogplatform1.png" alt="blogplatform site" data-toggle="modal" data-target="#modal2">
+          <div class="card-body">
+            <h3 class="card-title text-white">Fullstack: Blogplatform Website</h3>
+            <p class="card-text text-info">This is a fullstack website for publishing and sharing blog entries. The responsive site was developed with the MERN stack. </p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Show More</button>
+          </div>
+        </div>
+        <div class="modal fade" id="modal2" tabindex="-1">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h3 class="modal-title text-primary">Fullstack: Blogplatform Website</h3>
+                <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body bg-light">
+                <img class="card-img-top gray-scale" src="./img/blogplatform1.png" alt="blogplatform site" data-toggle="modal" data-target="#modal2">
+                <p class="text-info m-5">The server was made with NodeJS and Atlas (MongoDB) as database. 
+                  The client was developed with ReactJS and Bootstrap for styles. 
+                  The connection between both was implemented as a RESTful arquitecture. 
+                  The client side made the request with the javascript Fetch API. 
+                  The server API connect with the Atlas database through Mongoose.
+                <br> <br>You can see a previous of the site here <a href="https://blogplatformsite.herokuapp.com/" target="_blank">my blogplatform site</a>.
+                <br>If you want to check my code:
+                <a href="https://github.com/jorgeflagel/BlogPlatform-server" target="_blank">Server code</a>
+                <a href="https://github.com/jorgeflagel/BlogPlatform-client" target="_blank">Website code</a>
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
         <!-- CARD AND MODAL 1 -->
         <div class="card m-2 bg-dark" style="width: 27rem;">
           <img class="card-img-top gray-scale" src="./img/frontendmentor2.png" alt="frontend challenges" data-toggle="modal" data-target="#modal1">
           <div class="card-body">
-            <h3 class="card-title text-white">Frontendmentor Challenges</h3>
-            <p class="card-text text-info">Here you can see what I can do as a frontend developer.</p>
+            <h3 class="card-title text-white">Website Layouts: Frontendmentor Challenges</h3>
+            <p class="card-text text-info">Here you can see what I can do as a frontend developer. Some layouts that were made beggining from a Figma sketch.</p>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Show More</button>
           </div>
         </div>
@@ -137,7 +183,7 @@
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header bg-dark">
-                <h3 class="modal-title text-primary">Frontendmentor Challenges</h3>
+                <h3 class="modal-title text-primary">Website Layouts: Frontendmentor Challenges</h3>
                 <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
               <div class="modal-body bg-light">
@@ -146,6 +192,8 @@
                   <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="bg-primary active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-primary"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-primary"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3" class="bg-primary"></li>
                   </ol>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -153,6 +201,13 @@
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="./img/frontendmentor2.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="./img/frontendmentor3.png" alt="Third slide">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="./img/frontendmentor4.png" alt="Fourth slide">
                     </div>
                   </div>
                   <a class="carousel-control-prev text-primary" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -169,7 +224,7 @@
                   Beginning with a Figma design, I developed "pixel perfect" implementations in ReactJS.
                   <br>For styling I use Styled-Components, that let me write CSS in JavaScript.
                   The layouts are made, mainly, with CSS Flex and CSS Grid.
-                  <br> <br>You can see a previous of the sites in <a href="https://www.frontendmentor.io/profile/jorgeflagel">my Frontendmentor portfolio</a>.
+                  <br> <br>You can see a previous of the sites in <a href="https://www.frontendmentor.io/profile/jorgeflagel/solutions" target="_blank">my Frontendmentor portfolio</a>.
                 </p>
               </div>
               <div class="modal-footer bg-dark">
@@ -179,42 +234,13 @@
           </div>
         </div>
 
-
-        <!-- CARD AND MODAL 2 -->
-        <!--
-        <div class="card m-2 bg-dark" style="width: 27rem;">
-          <img class="card-img-top gray-scale" src="./img/facebook.jpg" alt="facebook web" data-toggle="modal" data-target="#modal2">
-          <div class="card-body">
-            <h3 class="card-title text-white">Language App with API RESTful</h3>
-            <p class="card-text text-info">This is the second project</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Show More</button>
-          </div>
-        </div>
-        <div class="modal fade" id="modal2" tabindex="-1">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header bg-dark">
-                <h3 class="modal-title text-primary">Second Project</h3>
-                <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="modal-body bg-light">
-                <p class="text-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint accusantium et nesciunt aut voluptatem, iusto quas magni. Quis, laboriosam? Aut vel quas cupiditate dolor modi, nemo dolorum assumenda recusandae suscipit?</p>
-              </div>
-              <div class="modal-footer bg-dark">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        -->
-
         <!-- CARD AND MODAL 3 -->
-        <!--
+        
         <div class="card m-2 bg-dark" style="width: 27rem;">
-          <img class="card-img-top gray-scale" src="./img/duolingo.jpg" alt="duolingo app" data-toggle="modal" data-target="#modal3">
+          <img class="card-img-top gray-scale" src="./img/countries-light.png" alt="countries site" data-toggle="modal" data-target="#modal3">
           <div class="card-body">
-            <h3 class="card-title text-white">Social media web with NodeJS</h3>
-            <p class="card-text text-info">This is the third project</p>
+            <h3 class="card-title text-white">Consuming REST API II: Countries Information</h3>
+            <p class="card-text text-info">Another React website to practice the fetching of data from a REST API.</p>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Show More</button>
           </div>
         </div>
@@ -222,11 +248,46 @@
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header bg-dark">
-                <h3 class="modal-title text-primary">Third Project</h3>
+                <h3 class="modal-title text-primary">Consuming REST API II: Countries Information</h3>
                 <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
               <div class="modal-body bg-light">
-                <p class="text-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint accusantium et nesciunt aut voluptatem, iusto quas magni. Quis, laboriosam? Aut vel quas cupiditate dolor modi, nemo dolorum assumenda recusandae suscipit?</p>
+                <!-- CARROUSEL -->
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="bg-primary active"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="1" class="bg-primary"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="2" class="bg-primary"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="./img/countries-light.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="./img/countries-dark.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="./img/countries-details.png" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev text-primary" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <span><i class="fa fa-2x fa-angle-left" aria-hidden="true"></i></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next text-primary" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <span><i class="fa fa-2x fa-angle-right" aria-hidden="true"></i></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <!-- END CARROUSEL -->
+                <p class="text-info text-info-carrousel">In this project I made a React website that consume an REST API. 
+                  The site is connected to the API through the javascript Fetch API.
+                  <br> 
+                  The site was styled with Styled-components and a switcher from light to dark mode was implemented.
+                  <br>
+                  <br>You can see a previous of the site <a href="https://frontendmentorchallenge-restcountries.vercel.app/" target="_blank">here</a>.
+                  <br>You can check the code <a href="https://github.com/jorgeflagel/-FrontEndMentorChallenge-RestCountries" target="_blank">here</a>.
+                </p>
               </div>
               <div class="modal-footer bg-dark">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -234,15 +295,15 @@
             </div>
           </div>
         </div>
-        -->
+       
 
         <!-- CARD AND MODAL 4 -->
-        <!--
+        
         <div class="card m-2 bg-dark" style="width: 27rem;">
-          <img class="card-img-top gray-scale" src="./img/youtube.jpg" alt="youtbe web" data-toggle="modal" data-target="#modal4">
+          <img class="card-img-top gray-scale" src="./img/superheroes.png" alt="superheroes site" data-toggle="modal" data-target="#modal4">
           <div class="card-body">
-            <h3 class="card-title text-white">Video web page with Django</h3>
-            <p class="card-text text-info">This is the fourth project</p>
+            <h3 class="card-title text-white">Consuming REST API: Superheroes Information</h3>
+            <p class="card-text text-info">A React website to practice the fetching of data from a REST API.</p>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">Show More</button>
           </div>
         </div>
@@ -250,11 +311,41 @@
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header bg-dark">
-                <h3 class="modal-title text-primary">Fourth Project</h3>
+                <h3 class="modal-title text-primary">Consuming REST API: Superheroes Information</h3>
                 <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
               <div class="modal-body bg-light">
-                <p class="text-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint accusantium et nesciunt aut voluptatem, iusto quas magni. Quis, laboriosam? Aut vel quas cupiditate dolor modi, nemo dolorum assumenda recusandae suscipit?</p>
+                <!-- CARROUSEL -->
+                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="bg-primary active"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="1" class="bg-primary"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="./img/superheroes.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="./img/superheroes2.png" alt="Second slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev text-primary" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                    <span><i class="fa fa-2x fa-angle-left" aria-hidden="true"></i></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next text-primary" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                    <span><i class="fa fa-2x fa-angle-right" aria-hidden="true"></i></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <!-- END CARROUSEL -->
+                <p class="text-info text-info-carrousel">In this project I made a React website that consume an REST API. 
+                  The site is connected to the API through the javascript Fetch API.
+                  <br> 
+                  The site was styled with Bootstrap and the forms were validated with Formik.
+                  <br>
+                  <br>You can check the code <a href="https://github.com/jorgeflagel/superheroesTeam" target="_blank">here</a>.
+                </p>
               </div>
               <div class="modal-footer bg-dark">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -262,7 +353,7 @@
             </div>
           </div>
         </div>
-        -->
+       
 
         <!-- CARD AND MODAL 5 -->
         <!--
